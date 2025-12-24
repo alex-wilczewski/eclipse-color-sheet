@@ -15,14 +15,14 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 animate-fade-in flex-1" style={{ animationDelay: "0ms" }}>
             <ColorSwatch
               name="Twilight 100"
-              hex="#E8E5F7"
+              hex="#E9E9FC"
               bgClass="bg-twilight-100"
               textDark={true}
               className="h-full"
             />
             <ColorSwatch
               name="Twilight 200"
-              hex="#D0CAF0"
+              hex="#D3D1F8"
               bgClass="bg-twilight-200"
               textDark={true}
               className="h-full"
