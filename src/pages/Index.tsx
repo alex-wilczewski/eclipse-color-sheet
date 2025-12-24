@@ -88,7 +88,7 @@ const Index = () => {
               name="Moss 100"
               hex="#E7FE96"
               bgClass="bg-moss-100"
-              textDark={false}
+              textDark={true}
               className="h-full"
             />
             <ColorSwatch
