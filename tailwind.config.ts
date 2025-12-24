@@ -58,29 +58,28 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // Custom palette colors
-        lime: {
-          400: "hsl(var(--lime-400))",
+        twilight: {
+          100: "hsl(var(--twilight-100))",
+          200: "hsl(var(--twilight-200))",
+          300: "hsl(var(--twilight-300))",
+          800: "hsl(var(--twilight-800))",
+          900: "hsl(var(--twilight-900))",
         },
-        plum: {
-          100: "hsl(var(--plum-100))",
-          200: "hsl(var(--plum-200))",
-          300: "hsl(var(--plum-300))",
-          800: "hsl(var(--plum-800))",
-          900: "hsl(var(--plum-900))",
+        pumice: {
+          100: "hsl(var(--pumice-100))",
+          200: "hsl(var(--pumice-200))",
+          300: "hsl(var(--pumice-300))",
+          400: "hsl(var(--pumice-400))",
         },
-        cream: {
-          100: "hsl(var(--cream-100))",
-          200: "hsl(var(--cream-200))",
-          300: "hsl(var(--cream-300))",
-          400: "hsl(var(--cream-400))",
+        moss: {
+          100: "hsl(var(--moss-100))",
         },
-        mint: "hsl(var(--mint))",
-        zest: "hsl(var(--zest))",
-        peach: {
-          300: "hsl(var(--peach-300))",
+        lavender: {
+          100: "hsl(var(--lavender-100))",
         },
-        blueberry: "hsl(var(--blueberry))",
-        jam: "hsl(var(--jam))",
+        moonlight: {
+          100: "hsl(var(--moonlight-100))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

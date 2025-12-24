@@ -26,11 +26,11 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
   return (
     <div
       onClick={handleCopy}
-      className={`color-swatch ${bgClass} ${className} flex flex-col justify-end p-5 min-h-[140px] relative overflow-hidden group`}
+      className={`color-swatch ${bgClass} ${className} flex flex-col justify-end p-5 relative overflow-hidden group border border-border/30`}
     >
-      <div className={`${textDark ? "text-plum-900" : "text-cream-100"} transition-all duration-200`}>
+      <div className={`${textDark ? "text-foreground" : "text-white"} transition-all duration-200`}>
         <p className="font-semibold text-sm leading-tight">{name}</p>
-        <p className={`text-sm font-medium ${textDark ? "text-plum-900/70" : "text-cream-100/70"}`}>
+        <p className={`text-sm font-medium ${textDark ? "text-foreground/60" : "text-white/70"}`}>
           {hex}
         </p>
       </div>
@@ -41,7 +41,7 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
           copied 
             ? "opacity-100 scale-100" 
             : "opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100"
-        } ${textDark ? "bg-plum-900/10 text-plum-900" : "bg-cream-100/20 text-cream-100"}`}
+        } ${textDark ? "bg-foreground/10 text-foreground" : "bg-white/20 text-white"}`}
       >
         {copied ? "Copied!" : "Click to copy"}
       </div>
