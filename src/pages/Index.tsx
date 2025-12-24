@@ -88,21 +88,21 @@ const Index = () => {
               name="Moss 100"
               hex="#E7FE96"
               bgClass="bg-moss-100"
-              textDark={true}
+              textDark={false}
               className="h-full"
             />
             <ColorSwatch
               name="Lavender 100"
               hex="#B8A4E6"
               bgClass="bg-lavender-100"
-              textDark={true}
+              textDark={false}
               className="h-full"
             />
             <ColorSwatch
               name="Moonlight 100"
               hex="#81B2EB"
               bgClass="bg-moonlight-100"
-              textDark={true}
+              textDark={false}
               className="h-full"
             />
           </div>
