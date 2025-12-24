@@ -93,7 +93,7 @@ const Index = () => {
             />
             <ColorSwatch
               name="Lavender 100"
-              hex="#B8A4E6"
+              hex="#BA81EB"
               bgClass="bg-lavender-100"
               textDark={false}
               className="h-full"
