@@ -36,7 +36,7 @@ const Index = () => {
             />
             <ColorSwatch
               name="Twilight 800"
-              hex="#211ADB"
+              hex="#4D48E2"
               bgClass="bg-twilight-800"
               textDark={false}
               className="h-full"
