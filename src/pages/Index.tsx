@@ -1,6 +1,18 @@
+import { useState, useEffect } from "react";
+import { Sun, Moon } from "lucide-react";
 import ColorSwatch from "@/components/ColorSwatch";
 
 const Index = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDark]);
+
   return (
     <>
       <head>
@@ -8,7 +20,7 @@ const Index = () => {
         <meta name="description" content="A beautiful color palette reference featuring Twilight, Pumice, and accent colors. Click to copy hex codes." />
       </head>
       
-      <main className="h-screen bg-background p-4 md:p-6 lg:p-8">
+      <main className="h-screen bg-background p-4 md:p-6 lg:p-8 relative">
         <div className="max-w-6xl mx-auto h-full flex flex-col gap-3">
           
           {/* Twilight Row */}
@@ -107,6 +119,19 @@ const Index = () => {
             />
           </div>
         </div>
+
+        {/* Dark/Light Mode Toggle */}
+        <button
+          onClick={() => setIsDark(!isDark)}
+          className="absolute bottom-4 left-4 md:bottom-6 md:left-6 lg:bottom-8 lg:left-8 p-3 rounded-full bg-foreground/10 hover:bg-foreground/20 transition-colors duration-200"
+          aria-label="Toggle dark mode"
+        >
+          {isDark ? (
+            <Sun className="w-5 h-5 text-foreground" />
+          ) : (
+            <Moon className="w-5 h-5 text-foreground" />
+          )}
+        </button>
       </main>
     </>
   );
