@@ -56,7 +56,7 @@
 
   .dark {
     --background: 0 0% 15%;
-    --foreground: 234 45% 94%;
+    --foreground: 0 0% 15%;
     --card: 243 70% 14%;
     --card-foreground: 243 81% 30%;
     --popover: 243 70% 14%;
