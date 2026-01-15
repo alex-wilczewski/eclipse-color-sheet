@@ -46,7 +46,7 @@ const Index = () => {
               hex="#211ADB"
               bgClass="bg-twilight-900"
               textDark={false}
-              className="h-full"
+              className="h-full col-span-2 md:col-span-1"
             />
           </div>
 
