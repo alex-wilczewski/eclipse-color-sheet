@@ -31,7 +31,7 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
     >
       <div className={`${textDark ? "text-foreground" : "text-white"} transition-all duration-200`}>
         <p className="font-semibold text-sm leading-tight">{name}</p>
-        <p className={`text-sm font-medium ${textDark ? "text-foreground/60" : "text-white/70"}`}>
+        <p className={`text-[10px] font-medium ${textDark ? "text-foreground/60" : "text-white/70"}`}>
           {hex}
         </p>
       </div>
