@@ -17,11 +17,7 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
     try {
       await navigator.clipboard.writeText(hex);
       setCopied(true);
-      toast.success(
-        <span>
-          Copied <span style={{ color: hex, fontWeight: 600 }}>{hex}</span> to clipboard!
-        </span>
-      );
+      toast.success(`Copied ${hex} to clipboard!`);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       toast.error("Failed to copy");
