@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
+import { Copy, Check } from "lucide-react";
 
 interface ColorSwatchProps {
   name: string;
@@ -37,13 +38,13 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
       
       {/* Copy indicator */}
       <div 
-        className={`absolute top-3 right-3 text-[10px] font-medium px-1.5 py-0.5 rounded-full transition-all duration-200 ${
+        className={`absolute top-3 right-3 p-1.5 rounded-full transition-all duration-200 ${
           copied 
             ? "opacity-100 scale-100" 
             : "opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100"
         } ${textDark ? "bg-foreground/10 text-foreground" : "bg-white/20 text-white"}`}
       >
-        {copied ? "Copied!" : "Click to copy"}
+        {copied ? <Check size={14} /> : <Copy size={14} />}
       </div>
     </div>
   );
