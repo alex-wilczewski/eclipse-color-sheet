@@ -85,7 +85,7 @@ const Index = () => {
           </div>
 
           {/* Accent Colors Row */}
-          <div className="grid grid-cols-3 gap-3 animate-fade-in flex-1" style={{ animationDelay: "200ms" }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 animate-fade-in flex-1" style={{ animationDelay: "200ms" }}>
             <ColorSwatch
               name="Moss 100"
               hex="#E7FE96"
