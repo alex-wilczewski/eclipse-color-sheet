@@ -37,7 +37,7 @@ const ColorSwatch = ({ name, hex, bgClass, textDark = false, className = "" }: C
       
       {/* Copy indicator */}
       <div 
-        className={`absolute top-3 right-3 text-xs font-medium px-2 py-1 rounded-full transition-all duration-200 ${
+        className={`absolute top-3 right-3 text-[10px] font-medium px-1.5 py-0.5 rounded-full transition-all duration-200 ${
           copied 
             ? "opacity-100 scale-100" 
             : "opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100"
