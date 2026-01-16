@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,12 +13,12 @@
     --twilight-300: 240 80% 85%;
     --twilight-800: 243 70% 59%;
     --twilight-900: 243 81% 48%;
-    
+
     --pumice-100: 40 100% 99%;
     --pumice-200: 42 56% 97%;
     --pumice-300: 42 47% 92%;
     --pumice-400: 42 53% 84%;
-    
+
     --moss-100: 73 98% 79%;
     --lavender-100: 280 73% 71%;
     --moonlight-100: 210 72% 71%;
@@ -42,7 +43,7 @@
     --border: 236 30% 90%;
     --input: 236 30% 90%;
     --ring: 243 81% 48%;
-    --radius: 1rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -72,6 +73,7 @@
     --border: 243 70% 22%;
     --input: 243 70% 22%;
     --ring: 240 80% 85%;
+    --radius: 0.75rem;
   }
 }
 
