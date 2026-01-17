@@ -154,6 +154,7 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
     <div
       style={{
         width: '100%',
+        minHeight: '100vh',
         height: '100%',
         position: 'relative'
       }}
