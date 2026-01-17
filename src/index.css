@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Custom palette */
+    --twilight-100: 240 77% 95%;
+    --twilight-200: 243 77% 89%;
+    --twilight-300: 240 80% 85%;
+    --twilight-800: 243 70% 59%;
+    --twilight-900: 243 81% 48%;
+
+    --pumice-100: 40 100% 99%;
+    --pumice-200: 42 56% 97%;
+    --pumice-300: 42 47% 92%;
+    --pumice-400: 42 53% 84%;
+
+    --moss-100: 73 98% 79%;
+    --lavender-100: 280 73% 71%;
+    --moonlight-100: 210 72% 71%;
+
+    /* Design system tokens */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 243 81% 30%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 243 81% 30%;
+    --primary: 243 81% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 234 45% 94%;
+    --secondary-foreground: 243 81% 30%;
+    --muted: 42 56% 97%;
+    --muted-foreground: 243 40% 50%;
+    --accent: 73 98% 79%;
+    --accent-foreground: 243 81% 30%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 236 30% 90%;
+    --input: 236 30% 90%;
+    --ring: 243 81% 48%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 15%;
+    --foreground: 0 0% 15%;
+    --card: 243 70% 14%;
+    --card-foreground: 243 81% 30%;
+    --popover: 243 70% 14%;
+    --popover-foreground: 243 81% 30%;
+    --primary: 240 80% 85%;
+    --primary-foreground: 243 81% 10%;
+    --secondary: 243 70% 18%;
+    --secondary-foreground: 243 81% 30%;
+    --muted: 243 70% 18%;
+    --muted-foreground: 243 40% 50%;
+    --accent: 73 98% 79%;
+    --accent-foreground: 243 81% 10%;
+    --border: 243 70% 22%;
+    --input: 243 70% 22%;
+    --ring: 240 80% 85%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .color-swatch {
+    @apply rounded-2xl transition-all duration-300 ease-out cursor-pointer;
+  }
+
+  .color-swatch:hover {
+    @apply scale-[1.02] shadow-lg;
+  }
+
+  .color-swatch:active {
+    @apply scale-[0.98];
+  }
+}
