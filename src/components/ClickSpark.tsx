@@ -166,7 +166,8 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
           position: 'absolute',
           inset: 0,
           pointerEvents: 'none',
-          zIndex: 9999
+          zIndex: 9999,
+          mixBlendMode: 'difference'
         }}
       />
       {children}
