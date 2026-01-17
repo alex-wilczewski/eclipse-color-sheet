@@ -9,7 +9,7 @@ const Index = () => {
         <meta name="description" content="A beautiful color palette reference featuring Twilight, Pumice, and accent colors. Click to copy hex codes." />
       </head>
       
-      <ClickSpark sparkColor="#211ADB" sparkSize={12} sparkRadius={20} sparkCount={10}>
+      <ClickSpark sparkColor="#FFFFFF" sparkSize={12} sparkRadius={20} sparkCount={10}>
         <main className="h-screen bg-background p-4 md:p-6 lg:p-8 relative">
           <div className="max-w-6xl mx-auto h-full flex flex-col gap-3">
           
