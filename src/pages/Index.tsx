@@ -1,4 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
+import ClickSpark from "@/components/ClickSpark";
 
 const Index = () => {
   return (
@@ -8,8 +9,9 @@ const Index = () => {
         <meta name="description" content="A beautiful color palette reference featuring Twilight, Pumice, and accent colors. Click to copy hex codes." />
       </head>
       
-      <main className="h-screen bg-background p-4 md:p-6 lg:p-8 relative">
-        <div className="max-w-6xl mx-auto h-full flex flex-col gap-3">
+      <ClickSpark sparkColor="#4D48E2" sparkSize={12} sparkRadius={20} sparkCount={10}>
+        <main className="h-screen bg-background p-4 md:p-6 lg:p-8 relative">
+          <div className="max-w-6xl mx-auto h-full flex flex-col gap-3">
           
           {/* Twilight Row */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 animate-fade-in flex-1" style={{ animationDelay: "0ms" }}>
@@ -108,8 +110,9 @@ const Index = () => {
               className="h-full"
             />
           </div>
-        </div>
-      </main>
+          </div>
+        </main>
+      </ClickSpark>
     </>
   );
 };
